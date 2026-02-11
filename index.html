@@ -1,11 +1,24 @@
-<!Doctype html>
-<html>
-    <head> 
-        <title> Israela Kriebel</title>
-    </head>
-</html>
-<body>
-    <h1>Hello, I'm Israela Kriebel </h1>
-    <p>Welcome to my personal website</p>
-    <p>Architectural Engineering / University of Miami</p>
-</body>
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ResumeSection from "@/components/ResumeSection";
+import ContactSection from "@/components/ContactSection";
+
+const Index = () => {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <ProjectsSection />
+        <ResumeSection />
+        <ContactSection />
+      </main>
+      <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
+        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+      </footer>
+    </>
+  );
+};
+
+export default Index;
